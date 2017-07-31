@@ -35,19 +35,23 @@ class ViewController: UIViewController {
   }
 
   @IBAction func frameSliderChanged(_ sender: AnyObject) {
+    containerView.frame.origin.x = CGFloat(frameSlider.value)
     updateValues()
   }
 
   @IBAction func boundsSliderChanged(_ sender: AnyObject) {
+    containerView.bounds.origin.x = CGFloat(boundsSlider.value)
     updateValues()
   }
 
 
   @IBAction func frameYSliderChanged(_ sender: AnyObject) {
+    containerView.frame.origin.y = CGFloat(frameSlider.value)
     updateValues()
   }
 
   @IBAction func boundsYSliderChanged(_ sender: AnyObject) {
+    containerView.bounds.origin.y = CGFloat(boundsSlider.value)
     updateValues()
   }
 
